@@ -1,0 +1,11 @@
+FROM alpine
+MAINTAINER Cheewai Lai <clai@csir.co.za>
+#
+# Not using nginx because addon modules requires compilation from source
+#
+# CAVEAT: apache2-ssl gives problem!
+#
+RUN apk update \
+ && apk add libxml2 apache2 apache2-proxy apache2-proxy-html apache2-utils  \
+ && ln -s /usr/lib/libxml2.so.2 /usr/lib/libxml2.so \
+ && mkdir -p /run/apache2/
