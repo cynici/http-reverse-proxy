@@ -4,6 +4,9 @@ This provides HTTP(S) reverse proxy service using Apache that is capable of HTML
 
 HAProxy is not designed to rewrite HTML contents while NGINX [http_sub_module](http://nginx.org/en/docs/http/ngx_http_sub_module.html) is not built-in and requires compilation from source.
 
+## 2016-07-29 Update
+
+Added *jessie* branch because required packages not available in *Debian testing*.
 
 ## Usage
 

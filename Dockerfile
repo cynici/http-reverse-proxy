@@ -1,4 +1,4 @@
-FROM debian:testing
+FROM debian:jessie-backports
 MAINTAINER Cheewai Lai <clai@csir.co.za>
 
 #
